@@ -25,19 +25,19 @@ For this, I have taken into account the x,y,z acceleration trends with respect t
 
 ## Data Modelling
 
-Decision tree classifier:
+### Decision tree classifier:
 
 A decision tree is a representation used for classification, where the dataset is split based on different conditions. For this dataset, we choose to use this type of classification, where we split the data based on some parameter. Also, we intend tune the parameters so that we can use those parameter and get a good accuracy score for the choosen dataset. Furthermore, Kfold cross validation and stratified shuffel split cross validation are used
  
-Decision Tree With Kfold Cross Validation:
+### Decision Tree With Kfold Cross Validation:
 
 Kfold cross validation, the data is divided into folds. Each fold is has specific amount of data to train and test. once the training and testing are performed, we then simultaniously check the accuracy score for each validation dataset.
  
-KNN (KNearst Neighbor) Classifier:
+### KNN (KNearst Neighbor) Classifier:
 
 KNN(KNearst Neighbor) is a non-parametric method used for classification. Such type of classification method are based on feature similarity. With this dataset, we intend to run a normal KNN and check the accuracy for it. Furthermore, we will also do a KFold cross validation.
   
-KNN with KFold Cross Validation
+### KNN with KFold Cross Validation:
 Kfold cross validation, the data is divided into folds. Each fold is has specific amount of data to train and test. once the training and testing are performed, we then simultaniously check the accuracy score for each validation dataset.
   
 ## Conclusion

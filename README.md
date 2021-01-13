@@ -42,6 +42,6 @@ Kfold cross validation, the data is divided into folds. Each fold is has specifi
   
 ## Conclusion
 
-From the above classification models, it is evident that KNN (K-Nearst Neighbor) has the best accuracy overall i.e. 72%; whereas the accuracy score for the decision tree is somewhere around 65%. Therefore, for the "Activity Recognition from Single Chest-Mounted Accelerometer" dataset KNN classification model can be consdered to recognise the given activity. However, in the dataset, there were a lot of ambiguty, which had to be mitigated.
+From the above classification models, it is evident that KNN (K-Nearst Neighbor) has the best accuracy overall i.e. 83%; whereas the accuracy score for the decision tree is somewhere around 82%. Therefore, for the "Activity Recognition from Single Chest-Mounted Accelerometer" dataset KNN classification model can be consdered to recognise the given activity. 
 
 

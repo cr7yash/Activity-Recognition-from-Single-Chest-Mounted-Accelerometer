@@ -10,6 +10,8 @@ The Activity Recognition from Single Chest-Mounted Accelerometer dataset mainly 
 6. Walking and talking with someone is identified as 6
 7. Talking While Standing is identified as 7
 
+Dataset Source: https://archive.ics.uci.edu/ml/datasets/Activity+Recognition+from+Single+Chest-Mounted+Accelerometer
+
 ## Preparing the data
 
 In order to prepare the data I have read all the 15 data files at once. Moreover, while appending each file I have added one column representing the respondent number.
@@ -24,7 +26,22 @@ For this, I have taken into account the x,y,z acceleration trends with respect t
 ## Data Modelling
 
 Decision tree classifier:
- Decision Tree With Kfold Cross Validation:
+
+A decision tree is a representation used for classification, where the dataset is split based on different conditions. For this dataset, we choose to use this type of classification, where we split the data based on some parameter. Also, we intend tune the parameters so that we can use those parameter and get a good accuracy score for the choosen dataset. Furthermore, Kfold cross validation and stratified shuffel split cross validation are used
+ 
+Decision Tree With Kfold Cross Validation:
+
+Kfold cross validation, the data is divided into folds. Each fold is has specific amount of data to train and test. once the training and testing are performed, we then simultaniously check the accuracy score for each validation dataset.
  
 KNN (KNearst Neighbor) Classifier:
-  KNN with KFold Cross Validation
+
+KNN(KNearst Neighbor) is a non-parametric method used for classification. Such type of classification method are based on feature similarity. With this dataset, we intend to run a normal KNN and check the accuracy for it. Furthermore, we will also do a KFold cross validation.
+  
+KNN with KFold Cross Validation
+Kfold cross validation, the data is divided into folds. Each fold is has specific amount of data to train and test. once the training and testing are performed, we then simultaniously check the accuracy score for each validation dataset.
+  
+## Conclusion
+
+From the above classification models, it is evident that KNN (K-Nearst Neighbor) has the best accuracy overall i.e. 72%; whereas the accuracy score for the decision tree is somewhere around 65%. Therefore, for the "Activity Recognition from Single Chest-Mounted Accelerometer" dataset KNN classification model can be consdered to recognise the given activity. However, in the dataset, there were a lot of ambiguty, which had to be mitigated.
+
+
